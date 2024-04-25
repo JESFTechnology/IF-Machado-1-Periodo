@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
     inteiro a,b = 0,c,d
-    cadeia l1 = "X",l2= "X",l3= "X",l4= "X",l5= "X"
+    cadeia l1 = "X###",l2= "X |>",l3= "X   ",l4= "X   ",l5= "X   "
     faca{
       limpa()
       escreva("Vamos montar o jogo do mário?\n")
@@ -13,17 +13,8 @@ programa {
       leia(a)
       se(a == 1){
         limpa()
-        escreva("Quantos blocos de largura deseja? Máximo de 5. Digite aqui:")
+        escreva("Quantos blocos de largura deseja? Digite aqui:")
         leia(c)
-        escreva("\n")
-        escreva("A camada de altura do game é ",b," deseja alterar a camada?\n")
-        escreva("0 : Sim\n")
-        escreva("1 : Não\n")
-        leia(a)
-        se(a == 0){
-          escreva("Digite a nova camada, podendo ser 0, 1, 2, 3 ou 4:")
-          leia(b)
-        }
 
         para (inteiro i = 0; i <= c; i++)  
         {
@@ -71,7 +62,7 @@ programa {
       }
       senao se(a == 2){
         limpa()
-        escreva("Qual a camada final da escada? Distância da última camada de ",5-b," de altura: ")
+        escreva("Qual a camada final da escada? Distância da última camada de ",6-b," de altura: ")
         leia(c)
 
         para (inteiro i = b; i <= c; i++)  
@@ -170,7 +161,36 @@ programa {
         escreva(l1,"\n")
         b = b+c
       }senao se (a == 4 e b !=5){
-
+        se(b != 4){
+          se(b == 0){
+              l5 += "   "
+              l4 += "   "
+              l3 += "   "
+              l2 += " |>"
+              l1 += "###"
+          }
+          se(b == 1){
+              l5 += "   "
+              l4 += "   "
+              l3 += " |>"
+              l2 += "###"
+              l1 += "###"
+          }
+          se(b == 2){
+              l5 += "   "
+              l4 += " |>"
+              l3 += "###"              
+              l2 += "###"
+              l1 += "###"              
+          }
+          se(b == 3){
+              l5 += " |>"
+              l4 += "###"
+              l3 += "###"
+              l2 += "###"
+              l1 += "###"
+          }
+        }
       }
     }enquanto(a != 5)
     escreva(l5,"\n")
