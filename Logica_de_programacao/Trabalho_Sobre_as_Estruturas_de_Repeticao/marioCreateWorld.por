@@ -60,11 +60,10 @@ programa {
         escreva(l2,"\n")
         escreva(l1,"\n")
       }
-      senao se(a == 2){
+      senao se(a == 2 e b != 4){
         limpa()
-        escreva("Qual a camada final da escada? Distância da última camada de ",6-b," de altura: ")
+        escreva("Qual a camada final da escada? Distância da última camada de ",4-b," de altura: ")
         leia(c)
-
         para (inteiro i = b; i <= c; i++)  
         {
           se(i == 0){
@@ -112,7 +111,7 @@ programa {
       }
       senao se(a == 3){
         limpa()
-        escreva("Qual camada você deseja descer? Distância da primeira camada de ",b," de altura: ")
+        escreva("Para qual camada você deseja descer? Camada atual ",b," | Camada inicial 0. Digite aqui: ")
         leia(c)
 
         para (inteiro i = b; i >= c; i--)  
@@ -191,12 +190,15 @@ programa {
               l1 += "###"
           }
         }
+      }senao se(a == 5){
+      }senao{
+        limpa()
       }
     }enquanto(a != 5)
-    escreva(l5,"\n")
-    escreva(l4,"\n")
-    escreva(l3,"\n")
-    escreva(l2,"\n")
-    escreva(l1,"\n")
+    escreva(l5,"   \n")
+    escreva(l4,"   \n")
+    escreva(l3,"   \n")
+    escreva(l2," |>\n")
+    escreva(l1,"###\n")
   }
 }
