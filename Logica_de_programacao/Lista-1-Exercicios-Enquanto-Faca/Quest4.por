@@ -7,15 +7,15 @@ programa {
       pela sequência: 1,1,2,3,5,8,13,21,34,...etc. esta série se caracteriza pela soma de um termo atual com
       o seu anterior subsequente, para que seja formado o próximo valor da sequência.
     */
-    inteiro t1=1,t2=1,proximo
+    inteiro t1=1,t2=1,proximo,i = 1
     escreva(t1,"\n")
     escreva(t2,"\n")
-    para (inteiro i = 1; i <= 15; i++)  
-    {
+    faca{
+      i++
       proximo = t1 + t2
       escreva(proximo,"\n")
       t1 = t2
       t2 = proximo
-    }
+    }enquanto(i <= 15)
   }
 }
