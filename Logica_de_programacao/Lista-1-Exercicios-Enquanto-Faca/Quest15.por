@@ -12,7 +12,11 @@ faca
 {  
 
 
+se(num %2 == 0){
+
 escreva(num,"\n")
+
+}
 
 
 num--
@@ -21,6 +25,7 @@ num--
 
 enquanto(num != 0)
 
+escreva("0")
 
   }
 }
