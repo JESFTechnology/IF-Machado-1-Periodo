@@ -13,7 +13,7 @@ programa {
       se(valor < 0){
         quant = quant+1
       }
-    }equanto(i <= 5)
+    }enquanto(i <= 5)
     escreva(quant, " valores negativos.")
   }
 }
