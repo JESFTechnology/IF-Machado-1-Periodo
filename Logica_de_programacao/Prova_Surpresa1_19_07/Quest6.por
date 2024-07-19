@@ -3,9 +3,10 @@ programa {
     inteiro i=1,a
 
     escreva("Digite um número ")
-    leia(i)
+    leia(a)
 
     faca{
+      i++
       se(i == 2 ou i == 3 ou i ==5){
         
         escreva(i,"\n")
@@ -18,6 +19,7 @@ programa {
 
       }
 
-    }enquanto(i<=a)
+    }enquanto(i<a)
   }
 }
+
