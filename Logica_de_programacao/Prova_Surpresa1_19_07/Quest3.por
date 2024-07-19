@@ -15,8 +15,8 @@ programa {
           escreva(r)
         }
       }enquanto(a>1)
-
-    }enquanto(v==0)
+      escreva("\n")
+    }enquanto(v!=0)
     
   }
 }
