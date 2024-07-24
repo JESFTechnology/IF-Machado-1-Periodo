@@ -19,6 +19,7 @@ programa {
       //text = tx.inverte_texto(t)
       //escreva(text,"\n")
       escreva(t,"\n")
+      t = ""
     }enquanto(v!=0)
     
   }
