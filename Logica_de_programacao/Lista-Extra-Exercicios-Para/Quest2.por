@@ -8,7 +8,7 @@ programa {
       leia(b)
       c = c+b
     }
-    se(c/a >= 6){
+    se(c/a >= 7){
       escreva("Turma aprovada")
     }
     senao{
