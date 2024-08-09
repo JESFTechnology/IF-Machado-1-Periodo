@@ -16,6 +16,8 @@ int main() {
 
     // Imprime o resultado
     printf("O tempo de viagem é de %.2f horas\n", tempo);
+    
+    printf("O tempo de viagem é de %.2f minutos\n", tempo*60);
 
     return 0;
 }
