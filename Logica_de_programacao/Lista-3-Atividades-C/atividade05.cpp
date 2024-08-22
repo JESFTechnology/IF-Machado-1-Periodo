@@ -12,5 +12,5 @@ int main(){
 			total++;
 		}
 	}
-	printf("2 vezes o valor 50 foi citado: %i",total);
+	printf("A vezes o valor 50 foi citado: %i",total);
 }
